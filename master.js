@@ -36,17 +36,27 @@ const busRoutes = [
 // Challenge #1
 // Log out the first object in the busRoutes array
 
+console.log(busRoutes[0]);
+
 // Challenge #2
 
 // 1. Declare an empty array named "routeNameArray"
 // 2. Using the push() method, push each route name of each object in "busRoutes" into the "routeNameArray"
 // 3. Log out "routeNameArray"
 
+const routeNameArray = [];
+routeNameArray.push(busRoutes[0].name);
+routeNameArray.push(busRoutes[1].name);
+console.log(routeNameArray);
+
 // Challenge #3
 
 // 1. Declare an array called northBoundStops
 // 2.... and assign the relevant stops accessed from somewhere in the busRoutes array
 // 3 Log it out!
+
+const northBoundStops = busRoutes[1].stopsAt;
+console.log(northBoundStops);
 
 // Challenge #4
 
@@ -56,6 +66,11 @@ const busRoutes = [
  `
  2. Replace the capitalised text with the appropriate values access from the busRoutes array
  3. Log it out!
- 
  4. STRETCH GOAL --->  Add some more sentences to the template literal string and insert data from the busRoutes array as you see fit
 */
+
+const myDailyCommute = `
+ Every morning I take the ${busRoutes[0].name} at ${busRoutes[0].departureTime} from ${busRoutes[0].leavesFrom}. It arrives into ${busRoutes[0].destination} at about ${busRoutes[0].estArrivalTime}. As soon as I'm in town, I wish I could hop on the ${busRoutes[1].name} at ${busRoutes[1].departureTime}, and head back home to ${busRoutes[1].destination} fpr a nice, long sleep-in.
+ `;
+
+console.log(myDailyCommute);
