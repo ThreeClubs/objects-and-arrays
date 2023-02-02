@@ -34,7 +34,7 @@ const busRoutes = [
 ];
 
 // Challenge #1
-// Log out the first object in the busRoutes array
+// Log out the first object in the busRoutes array and share your screenshot
 
 console.log(busRoutes[0]);
 
@@ -42,7 +42,7 @@ console.log(busRoutes[0]);
 
 // 1. Declare an empty array named "routeNameArray"
 // 2. Using the push() method, push each route name of each object in "busRoutes" into the "routeNameArray"
-// 3. Log out "routeNameArray"
+// 3. Log out "routeNameArray" and share screen shot
 
 const routeNameArray = [];
 routeNameArray.push(busRoutes[0].name);
@@ -53,7 +53,7 @@ console.log(routeNameArray);
 
 // 1. Declare an array called northBoundStops
 // 2.... and assign the relevant stops accessed from somewhere in the busRoutes array
-// 3 Log it out!
+// 3 Log it out and you know the rest!
 
 const northBoundStops = busRoutes[1].stopsAt;
 console.log(northBoundStops);
@@ -65,12 +65,18 @@ console.log(northBoundStops);
  Every morning I take the ${NAME OF ROUTE} at ${TIME} from ${DEPARTS FROM} which arrives into ${DESTINATION} at about ${ARRIVAL TIME} 
  `
  2. Replace the capitalised text with the appropriate values access from the busRoutes array
- 3. Log it out!
+ 3. Log it out (screen it)
  4. STRETCH GOAL --->  Add some more sentences to the template literal string and insert data from the busRoutes array as you see fit
 */
 
 const myDailyCommute = `
- Every morning I take the ${busRoutes[0].name} at ${busRoutes[0].departureTime} from ${busRoutes[0].leavesFrom}. It arrives into ${busRoutes[0].destination} at about ${busRoutes[0].estArrivalTime}. As soon as I'm in town, I wish I could hop on the ${busRoutes[1].name} at ${busRoutes[1].departureTime}, and head back home to ${busRoutes[1].destination} fpr a nice, long sleep-in.
- `;
-
+ Every morning I take the ${busRoutes[0].name} at ${busRoutes[0].departureTime} from ${busRoutes[0].leavesFrom}. It arrives into ${busRoutes[0].destination} at about ${busRoutes[0].estArrivalTime}. 
+`;
 console.log(myDailyCommute);
+
+// const myDailyCommute =
+// `
+//  Every morning I take the ${busRoutes[0].name} at ${busRoutes[0].departureTime} from ${busRoutes[0].leavesFrom}. It arrives into ${busRoutes[0].destination} at about ${busRoutes[0].estArrivalTime}. As soon as I'm in town, I wish I could hop on the ${busRoutes[1].name} at ${busRoutes[1].departureTime}, and head back home to ${busRoutes[1].destination} fpr a nice, long sleep-in.
+//  `;
+
+//  console.log(myDailyCommute)
