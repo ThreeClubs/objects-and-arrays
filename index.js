@@ -34,7 +34,7 @@ const busRoutes = [
 ];
 
 // Challenge #1
-// Log out the first object in the busRoutes array
+// Log out the first object in the busRoutes array and share screen shot
 
 // Challenge #2
 
